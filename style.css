@@ -61,6 +61,43 @@ ol li:hover a{
     letter-spacing: 5px;
 }
 
+input {
+    -webkit-appearance: none;
+    visibility: hidden;
+    display: none;
+}
+
+span {
+    position: absolute;
+    right: -40px;
+    top: 30px;
+    font-size: 25px;
+    border-radius: 3px;
+    color: #fff;
+    padding: 3px 8px;
+    cursor: pointer;
+    background: black;
+}
+
+#bars {
+    background: red;
+}
+
+#check:checked ~ .container {
+    transform: translateX(0);
+}
+
+
+section {
+    min-height: 100vh;
+    background: url(aaa.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+}
+
+
 @media (max-width: 768px) {
     .container {
       width: 100%;
